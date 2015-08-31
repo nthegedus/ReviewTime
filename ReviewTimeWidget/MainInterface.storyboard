@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LondonBetween.ttf">
+            <string>LondonBetween</string>
+            <string>LondonBetween</string>
+        </mutableArray>
+        <mutableArray key="LondonMM.ttf">
+            <string>LondonMM</string>
+            <string>LondonMM</string>
+        </mutableArray>
+        <mutableArray key="LondonTwo.ttf">
+            <string>LondonTwo</string>
+            <string>LondonTwo</string>
+            <string>LondonTwo</string>
+            <string>LondonTwo</string>
+            <string>LondonTwo</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="ReviewTimeWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN" customClass="NHView" customModule="ReviewTimeWidget" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <rect key="frame" x="16" y="8" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WaV-40-jiI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LondonBetween" family="LondonBetween" pointSize="14"/>
+                                <color key="textColor" red="0.77647058823529413" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.30000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="1HM-OH-Dpu">
+                                <rect key="frame" x="127" y="94" width="130" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="LondonTwo" family="LondonTwo" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" verticalHuggingPriority="251" text="Mac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999403953552" translatesAutoresizingMaskIntoConstraints="NO" id="4NN-WQ-M0o">
+                                <rect key="frame" x="64" y="94" width="55" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="LondonMM" family="LondonMM" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.30000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="tWK-No-QXa">
+                                <rect key="frame" x="127" y="47" width="130" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="LondonTwo" family="LondonTwo" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" verticalHuggingPriority="251" text="iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999403953552" translatesAutoresizingMaskIntoConstraints="NO" id="89S-Jm-Fyf">
+                                <rect key="frame" x="64" y="47" width="55" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="LondonMM" family="LondonMM" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweet your review time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="zvD-Pi-ZX3">
+                                <rect key="frame" x="0.0" y="141" width="320" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="LondonBetween" family="LondonBetween" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btN-Kv-b75" customClass="NHButton" customModule="ReviewTimeWidget" customModuleProvider="target">
+                                <rect key="frame" x="20" y="172" width="136" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oEY-HY-y5C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LondonTwo" family="LondonTwo" pointSize="16"/>
+                                <state key="normal" title="#iosreviewtime">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBackgroundColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tweetIOS" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="eQP-3W-Y7x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGh-pI-UF9" customClass="NHButton" customModule="ReviewTimeWidget" customModuleProvider="target">
+                                <rect key="frame" x="164" y="172" width="136" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wD2-BM-t6x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LondonTwo" family="LondonTwo" pointSize="16"/>
+                                <state key="normal" title="#macreviewtime">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBackgroundColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tweetMac" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="Jfm-z8-5GD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfV-UJ-fW5">
+                                <rect key="frame" x="6" y="88" width="308" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Nv6-te-fca"/>
+                                    <constraint firstAttribute="height" constant="40" id="oYu-ez-Ub5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LondonTwo" family="LondonTwo" pointSize="16"/>
+                                <state key="normal" title="An error occurred, touch here to try again ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oYu-ez-Ub5"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="tryAgain:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="rNf-Id-OrH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="4NN-WQ-M0o" firstAttribute="top" secondItem="89S-Jm-Fyf" secondAttribute="bottom" constant="18" id="5k8-hi-ZM5"/>
+                            <constraint firstItem="89S-Jm-Fyf" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="18" id="7c5-ao-J2F"/>
+                            <constraint firstItem="zvD-Pi-ZX3" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-16" id="BYV-XR-Ab9"/>
+                            <constraint firstItem="4NN-WQ-M0o" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="48" id="D4P-ZK-goz"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="DD4-Js-89w"/>
+                            <constraint firstItem="1HM-OH-Dpu" firstAttribute="trailing" secondItem="tWK-No-QXa" secondAttribute="trailing" id="Fn9-E6-ypw"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="8" symbolic="YES" id="GSJ-Pq-VhJ"/>
+                            <constraint firstItem="1HM-OH-Dpu" firstAttribute="top" secondItem="4NN-WQ-M0o" secondAttribute="top" id="IZ6-eM-jbS"/>
+                            <constraint firstItem="wGh-pI-UF9" firstAttribute="width" secondItem="btN-Kv-b75" secondAttribute="width" id="ImI-tt-jOm"/>
+                            <constraint firstItem="btN-Kv-b75" firstAttribute="top" secondItem="zvD-Pi-ZX3" secondAttribute="bottom" constant="15" id="LVi-un-BOS"/>
+                            <constraint firstAttribute="centerY" secondItem="SfV-UJ-fW5" secondAttribute="centerY" id="NLP-iZ-GjD"/>
+                            <constraint firstItem="89S-Jm-Fyf" firstAttribute="baseline" secondItem="tWK-No-QXa" secondAttribute="baseline" id="aFF-Uz-mcM"/>
+                            <constraint firstItem="1HM-OH-Dpu" firstAttribute="leading" secondItem="4NN-WQ-M0o" secondAttribute="trailing" constant="8" symbolic="YES" id="ata-0e-UeK"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="btN-Kv-b75" secondAttribute="bottom" constant="8" symbolic="YES" id="bw9-KS-aHz"/>
+                            <constraint firstItem="89S-Jm-Fyf" firstAttribute="width" secondItem="tWK-No-QXa" secondAttribute="width" constant="-75" id="fQs-Gf-3u9"/>
+                            <constraint firstItem="89S-Jm-Fyf" firstAttribute="height" secondItem="tWK-No-QXa" secondAttribute="height" id="fyI-5s-WaO"/>
+                            <constraint firstAttribute="trailing" secondItem="wGh-pI-UF9" secondAttribute="trailing" constant="20" symbolic="YES" id="gGW-IA-Uof"/>
+                            <constraint firstItem="wGh-pI-UF9" firstAttribute="leading" secondItem="btN-Kv-b75" secondAttribute="trailing" constant="8" id="hAf-jR-8zQ"/>
+                            <constraint firstAttribute="centerX" secondItem="SfV-UJ-fW5" secondAttribute="centerX" id="jIG-HI-1Uy"/>
+                            <constraint firstItem="1HM-OH-Dpu" firstAttribute="leading" secondItem="tWK-No-QXa" secondAttribute="leading" id="owo-0u-Rhf"/>
+                            <constraint firstItem="btN-Kv-b75" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="20" symbolic="YES" id="p5Q-tD-TQQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tWK-No-QXa" secondAttribute="trailing" constant="47" id="qOk-qB-zBO"/>
+                            <constraint firstItem="89S-Jm-Fyf" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="48" id="rb5-Zp-Dgr"/>
+                            <constraint firstItem="1HM-OH-Dpu" firstAttribute="baseline" secondItem="4NN-WQ-M0o" secondAttribute="baseline" id="rdw-BU-VpZ"/>
+                            <constraint firstItem="tWK-No-QXa" firstAttribute="leading" secondItem="89S-Jm-Fyf" secondAttribute="trailing" constant="8" id="sdZ-Vj-033"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="srf-CG-9qv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zvD-Pi-ZX3" secondAttribute="trailing" constant="-16" id="tyX-no-FIg"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="wGh-pI-UF9" secondAttribute="bottom" constant="8" symbolic="YES" id="yw3-bc-Rxc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="220"/>
+                    <connections>
+                        <outlet property="errorButton" destination="SfV-UJ-fW5" id="ndO-k4-uOW"/>
+                        <outlet property="iosButton" destination="btN-Kv-b75" id="Y3V-xF-V2u"/>
+                        <outlet property="iosDaysLabel" destination="tWK-No-QXa" id="QUk-xU-IMk"/>
+                        <outlet property="iosTypeLabel" destination="89S-Jm-Fyf" id="rwx-0R-mVO"/>
+                        <outlet property="lastUpdateLabel" destination="GcN-lo-r42" id="ZTH-Lm-0pU"/>
+                        <outlet property="macButton" destination="wGh-pI-UF9" id="bZu-EZ-UTR"/>
+                        <outlet property="macDaysLabel" destination="1HM-OH-Dpu" id="Pqv-ns-MKd"/>
+                        <outlet property="macTypeLabel" destination="4NN-WQ-M0o" id="ibk-tm-Mhj"/>
+                        <outlet property="messageLabel" destination="zvD-Pi-ZX3" id="b0p-fq-UJM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="340"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

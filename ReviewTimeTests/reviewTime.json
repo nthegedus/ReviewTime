@@ -1,0 +1,30 @@
+{
+  "name": "Review Time Short Data",
+  "count": 1,
+  "frequency": "Every hour",
+  "version": 890,
+  "newdata": true,
+  "lastrunstatus": "success",
+  "thisversionstatus": "success",
+  "nextrun": "Mon Aug 31 2015 14:40:33 GMT+0000 (UTC)",
+  "thisversionrun": "Mon Aug 31 2015 13:40:33 GMT+0000 (UTC)",
+  "results": {
+    "data": [
+      {
+        "iOsDays": "6",
+        "iOsTotalReviews": {
+          "href": "http://appreviewtimes.com/ios/raw-data",
+          "text": "237"
+        },
+        "macDays": "5",
+        "macTotalReviews": {
+          "href": "http://appreviewtimes.com/mac/raw-data",
+          "text": "14"
+        },
+        "lastUpdate": "August 31, 13:30 UTC",
+        "index": 1,
+        "url": "http://appreviewtimes.com/"
+      }
+    ]
+  }
+}
