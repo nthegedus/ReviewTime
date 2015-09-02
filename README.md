@@ -2,23 +2,40 @@
 # ReviewTime
 Review Time is an open source app for iOS written in Swift that show the average review times for iOS and the Mac Apps using data crowdsourced from AppReviewTime (http://appreviewtimes.com/).
 
-# About
+### Requirements
+
+- iOS 8.0+
+- Xcode 6.4
+- Cocoapods 0.38.2
+
+
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects.
+
+You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+## About
 This project was written in Swift using Cocoapods and I used Kimono (https://www.kimonolabs.com/) to fetch the data.
 
-# Why?
+## Why?
 This app was Rejected by Apple for "false or fraudulent data". So I decided make this project available for all developers and to YOU make this app better. And last but not least, give a way to check and share this info easier using our iOS.
 
-# This data is real?
+## This data is real?
 THIS IS NOT OFFICIAL APPLE DATA. It is based only on anecdotal data gathered from people posting their latest review times on Twitter and App.net using the #macreviewtime or #iosreviewtime hash tags.
 
-#Where does this data come from?
+## Where does this data come from?
 It's a data crowdsourced from AppReviewTime (http://appreviewtimes.com/).
 
 # You can fetch the data from this site?
 YES :) Charlie Cook, from Shiny, allowed me to getting his data and so, I'm here now providing an App to you check the average review time from your iPhone.
 
 
-#MIT License
+##MIT License
 
 	Copyright (c) 2015 Nathan Hegedus
 
