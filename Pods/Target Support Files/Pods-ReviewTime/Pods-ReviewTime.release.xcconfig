@@ -1,7 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/Crashlytics" "$(PODS_ROOT)/Fabric" "$(PODS_ROOT)/TwitterCore" "$(PODS_ROOT)/TwitterKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Crashlytics" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/TwitterCore" "${PODS_ROOT}/Headers/Public/TwitterKit"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Alamofire.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/XCGLogger.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "XCGLogger"
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Alamofire.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/XCGLogger.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Crashlytics" -isystem "${PODS_ROOT}/Headers/Public/Fabric" -isystem "${PODS_ROOT}/Headers/Public/TwitterCore" -isystem "${PODS_ROOT}/Headers/Public/TwitterKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "Accounts" -framework "Alamofire" -framework "CoreData" -framework "CoreGraphics" -framework "CoreText" -framework "Crashlytics" -framework "Fabric" -framework "Foundation" -framework "QuartzCore" -framework "Security" -framework "Social" -framework "SystemConfiguration" -framework "TwitterCore" -framework "TwitterKit" -framework "UIKit" -framework "XCGLogger"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-ReviewTime
 PODS_ROOT = ${SRCROOT}/Pods

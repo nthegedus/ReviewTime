@@ -1,5 +1,9 @@
 PODS:
   - Alamofire (1.3.1)
+  - Crashlytics (3.1.1)
+  - Fabric (1.4.0):
+    - Fabric/Base (= 1.4.0)
+  - Fabric/Base (1.4.0)
   - OCMock (3.1.5)
   - OHHTTPStubs (4.2.0):
     - OHHTTPStubs/Default (= 4.2.0)
@@ -14,18 +18,28 @@ PODS:
   - OHHTTPStubs/NSURLSession (4.2.0):
     - OHHTTPStubs/Core
   - OHHTTPStubs/OHPathHelpers (4.2.0)
+  - TwitterCore (1.9.0)
+  - TwitterKit (1.9.0)
   - XCGLogger (2.3)
 
 DEPENDENCIES:
   - Alamofire
+  - Crashlytics
+  - Fabric
   - OCMock (~> 3.1)
   - OHHTTPStubs (~> 4.0)
+  - TwitterCore
+  - TwitterKit
   - XCGLogger
 
 SPEC CHECKSUMS:
   Alamofire: e4ab637e3195b645c814b87a652373439e59f2a4
+  Crashlytics: 39ab395565bc03c29cdecd2b9d103ebf30930c10
+  Fabric: 6d1d1c1eaf7ebc76fc3307e2c0259456411baf26
   OCMock: 4c2925291f80407c3738dd1db14d21d0cc278864
   OHHTTPStubs: f639130b83fb5f4f022d38f841141b0a6fa77249
+  TwitterCore: 98ed97a6047c4ef109522840337e815683ead7e5
+  TwitterKit: 1492792649dee11c2087498f7993f529bdb6c870
   XCGLogger: a1d7b20405e369aa5c139221569cd080494b2469
 
-COCOAPODS: 0.38.1
+COCOAPODS: 0.39.0.beta.4

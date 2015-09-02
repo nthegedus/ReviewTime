@@ -8,6 +8,10 @@ def mainPods
 end
 
 target 'ReviewTime' do
+    pod 'Fabric'
+    pod 'Crashlytics'
+    pod 'TwitterKit'
+    pod 'TwitterCore'
     mainPods
 end
 
