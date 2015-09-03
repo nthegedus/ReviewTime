@@ -34,12 +34,12 @@ class HomeViewController: UIViewController {
     var reviewTimeResult: ReviewTime? {
         didSet {
             self.iosDaysLabel.hidden = false
-            self.iosDaysLabel.text = "\(reviewTimeResult!.iosAverageTime) days"
-            self.iosDescriptionLabel.text = "Based on \(reviewTimeResult!.iosTotalTweets) reviews in the last 14 days*"
+            self.iosDaysLabel.text = NSLocalizedString("\(reviewTimeResult!.iosAverageTime) days", comment: "Average Days")
+            self.iosDescriptionLabel.text = NSLocalizedString("Based on \(reviewTimeResult!.iosTotalTweets) reviews in the last 14 days", comment: "Description reviews iOS")
             self.macDaysLabel.hidden = false
-            self.macDaysLabel.text = "\(reviewTimeResult!.macAverageTime) days"
-            self.macDescriptionLabel.text = "Based on \(reviewTimeResult!.macTotalTweets) reviews in the last 30 days*"
-            self.lastUpdateLabel.text = "last updated: \(reviewTimeResult!.lastUpdate)"
+            self.macDaysLabel.text = NSLocalizedString("\(reviewTimeResult!.macAverageTime) days", comment: "Average Days")
+            self.macDescriptionLabel.text = NSLocalizedString("Based on \(reviewTimeResult!.macTotalTweets) reviews in the last 30 days", comment: "Description reviews Mac")
+            self.lastUpdateLabel.text = NSLocalizedString("last updated: \(reviewTimeResult!.lastUpdate)", comment: "Last update Label")
             self.activityIndicatorView.stopAnimating()
             self.fadeInLabels()
         }
@@ -181,10 +181,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func openInfo(sender: AnyObject) {
+
+        let title = NSLocalizedString("Where does this data come from?", comment: "Title alert about")
+        let message = NSLocalizedString("This is not official Apple data. It is based only on anecdotal data gathered from people posting their latest review times on Twitter and App.net using the #macreviewtime or #iosreviewtime hash tags.", comment: "Message alert about")
         
-        let message = "This is not official Apple data. It is based only on anecdotal data gathered from people posting their latest review times on Twitter and App.net using the #macreviewtime or #iosreviewtime hash tags. For people that would prefer to remain anonymous when submitting their review we also allow direct submissions of review times."
-        
-        UIAlertView(title: "Where does this data come from?", message: message, delegate: nil, cancelButtonTitle: "Ok").show()
+        UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "Ok").show()
         
     }
     

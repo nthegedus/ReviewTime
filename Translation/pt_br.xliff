@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="ReviewTime/Base.lproj/LaunchScreen.xib" source-language="en" target-language="pt_BR" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.4" build-num="6E35b"/>
+    </header>
+    <body/>
+  </file>
+  <file original="ReviewTime/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.4" build-num="6E35b"/>
+    </header>
+    <body>
+      <trans-unit id="6iX-ul-SKj.text">
+        <source>tweet your review time</source>
+        <note>Class = "UILabel"; text = "tweet your review time"; ObjectID = "6iX-ul-SKj";</note>
+      <target>tweet o tempo do seu review</target></trans-unit>
+      <trans-unit id="LCi-xs-X1E.text">
+        <source>Mac</source>
+        <note>Class = "UILabel"; text = "Mac"; ObjectID = "LCi-xs-X1E";</note>
+      <target>Mac</target></trans-unit>
+      <trans-unit id="TtW-G3-2kB.normalTitle">
+        <source>Data provided by Shiny Development.</source>
+        <note>Class = "UIButton"; normalTitle = "Data provided by Shiny Development."; ObjectID = "TtW-G3-2kB";</note>
+      <target>Dados fornecidos por Shiny Development.</target></trans-unit>
+      <trans-unit id="aw1-ua-u4W.text">
+        <source>iOS</source>
+        <note>Class = "UILabel"; text = "iOS"; ObjectID = "aw1-ua-u4W";</note>
+      <target>iOS</target></trans-unit>
+      <trans-unit id="caJ-e7-Eti.normalTitle">
+        <source>#macreviewtime</source>
+        <note>Class = "UIButton"; normalTitle = "#macreviewtime"; ObjectID = "caJ-e7-Eti";</note>
+      <target>#macreviewtime</target></trans-unit>
+      <trans-unit id="g4X-gW-ZXd.normalTitle">
+        <source>An error occurred, touch here to try again </source>
+        <note>Class = "UIButton"; normalTitle = "An error occurred, touch here to try again "; ObjectID = "g4X-gW-ZXd";</note>
+      <target>Um erro aconteceu, toque aqui para tentar novamente</target></trans-unit>
+      <trans-unit id="iTW-pb-WAl.normalTitle">
+        <source>#iosreviewtime</source>
+        <note>Class = "UIButton"; normalTitle = "#iosreviewtime"; ObjectID = "iTW-pb-WAl";</note>
+      <target>#iosreviewtime</target></trans-unit>
+    </body>
+  </file>
+  <file original="ReviewTime/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.4" build-num="6E35b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>Review Time</source>
+      <target>Review Time</target></trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      <target>$(PRODUCT_NAME)</target></trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      <target>1.0</target></trans-unit>
+    </body>
+  </file>
+  <file original="ReviewTime/Localizable.strings" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.4" build-num="6E35b"/>
+    </header>
+    <body>
+      <trans-unit id="(reviewTimeResult!.iosAverageTime) days">
+        <source>(reviewTimeResult!.iosAverageTime) days</source>
+        <note>Average Days</note>
+      <target>(reviewTimeResult!.iosAverageTime) dias</target></trans-unit>
+      <trans-unit id="(reviewTimeResult!.macAverageTime) days">
+        <source>(reviewTimeResult!.macAverageTime) days</source>
+        <note>Average Days</note>
+      <target>(reviewTimeResult!.macAverageTime) dias</target></trans-unit>
+      <trans-unit id="Based on (reviewTimeResult!.iosTotalTweets) reviews in the last 14 days">
+        <source>Based on (reviewTimeResult!.iosTotalTweets) reviews in the last 14 days</source>
+        <note>Description reviews iOS</note>
+      <target>Baseado em (reviewTimeResult!.iosTotalTweets) reviews nos últimos 14 dias</target></trans-unit>
+      <trans-unit id="Based on (reviewTimeResult!.macTotalTweets) reviews in the last 30 days">
+        <source>Based on (reviewTimeResult!.macTotalTweets) reviews in the last 30 days</source>
+        <note>Description reviews Mac</note>
+      <target>Baseado em (reviewTimeResult!.macTotalTweets) reviews nos últimos 30 dias</target></trans-unit>
+      <trans-unit id="Loading...">
+        <source>Loading...</source>
+        <note>Loading Label</note>
+      <target>Carregando...</target></trans-unit>
+      <trans-unit id="This is not official Apple data. It is based only on anecdotal data gathered from people posting their latest review times on Twitter and App.net using the #macreviewtime or #iosreviewtime hash tags.">
+        <source>This is not official Apple data. It is based only on anecdotal data gathered from people posting their latest review times on Twitter and App.net using the #macreviewtime or #iosreviewtime hash tags.</source>
+        <note>Message alert about</note>
+      <target>Estes não são dados oficias da Apple. Os dados são baseados em postagens de pessoas que utilizam as hashtag #macreviewtime ou #iosreviewtime.</target></trans-unit>
+      <trans-unit id="Where does this data come from?">
+        <source>Where does this data come from?</source>
+        <note>Title alert about</note>
+      <target>De onde vem esses dados?</target></trans-unit>
+      <trans-unit id="last updated: (reviewTimeResult!.lastUpdate)">
+        <source>last updated: (reviewTimeResult!.lastUpdate)</source>
+        <note>Last update Label</note>
+      <target>última atualização: (reviewTimeResult!.lastUpdate)</target></trans-unit>
+    </body>
+  </file>
+  <file original="ReviewTimeTests/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.4" build-num="6E35b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      <target>$(PRODUCT_NAME)</target></trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      <target>1.0</target></trans-unit>
+    </body>
+  </file>
+  <file original="ReviewTimeWidget/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.4" build-num="6E35b"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>ReviewTimeWidget</source>
+      <target>ReviewTimeWidget</target></trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      <target>$(PRODUCT_NAME)</target></trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      <target>1.0</target></trans-unit>
+    </body>
+  </file>
+</xliff>

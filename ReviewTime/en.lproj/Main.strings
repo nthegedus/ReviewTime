@@ -1,0 +1,21 @@
+/* Class = "UILabel"; text = "tweet your review time"; ObjectID = "6iX-ul-SKj"; */
+"6iX-ul-SKj.text" = " tweet your review time";
+
+/* Class = "UILabel"; text = "Mac"; ObjectID = "LCi-xs-X1E"; */
+"LCi-xs-X1E.text" = "Mac";
+
+/* Class = "UIButton"; normalTitle = "Data provided by Shiny Development."; ObjectID = "TtW-G3-2kB"; */
+"TtW-G3-2kB.normalTitle" = "Data provided by Shiny Development.";
+
+/* Class = "UILabel"; text = "iOS"; ObjectID = "aw1-ua-u4W"; */
+"aw1-ua-u4W.text" = "iOS";
+
+/* Class = "UIButton"; normalTitle = "#macreviewtime"; ObjectID = "caJ-e7-Eti"; */
+"caJ-e7-Eti.normalTitle" = "#macreviewtime";
+
+/* Class = "UIButton"; normalTitle = "An error occurred, touch here to try again "; ObjectID = "g4X-gW-ZXd"; */
+"g4X-gW-ZXd.normalTitle" = "An error occurred, touch here to try again ";
+
+/* Class = "UIButton"; normalTitle = "#iosreviewtime"; ObjectID = "iTW-pb-WAl"; */
+"iTW-pb-WAl.normalTitle" = "#iosreviewtime";
+

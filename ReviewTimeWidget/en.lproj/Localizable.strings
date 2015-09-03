@@ -1,0 +1,12 @@
+/* Average Days */
+"(reviewTimeResult!.iosAverageTime) days" = "(reviewTimeResult!.iosAverageTime) days";
+
+/* Average Days */
+"(reviewTimeResult!.macAverageTime) days" = "(reviewTimeResult!.macAverageTime) days";
+
+/* Loading Label */
+"Loading..." = "Loading...";
+
+/* Last update Label */
+"last updated: (reviewTimeResult!.lastUpdate)" = "last updated: (reviewTimeResult!.lastUpdate)";
+

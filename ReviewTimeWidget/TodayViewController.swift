@@ -28,10 +28,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     var reviewTimeResult: ReviewTime? {
         didSet {
             self.iosDaysLabel.hidden = false
-            self.iosDaysLabel.text = "\(reviewTimeResult!.iosAverageTime) days"
+            self.iosDaysLabel.text = NSLocalizedString("\(reviewTimeResult!.iosAverageTime) days", comment: "Average Days")
             self.macDaysLabel.hidden = false
-            self.macDaysLabel.text = "\(reviewTimeResult!.macAverageTime) days"
-            self.lastUpdateLabel.text = "last updated: \(reviewTimeResult!.lastUpdate)"
+            self.macDaysLabel.text = NSLocalizedString("\(reviewTimeResult!.macAverageTime) days", comment: "Average Days")
+            self.lastUpdateLabel.text = NSLocalizedString("last updated: \(reviewTimeResult!.lastUpdate)", comment: "Last update Label")
             self.fadeInLabels()
         }
     }
@@ -95,7 +95,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     // MARK: - Private Methods
     
     private func fetchData() {
-        self.lastUpdateLabel.text = "Loading..."
+        self.lastUpdateLabel.text = NSLocalizedString("Loading...", comment: "Loading Label")
         ReviewTimeWS.fetchReviewTimeData { (reviewTime, error) -> Void in
             if error == nil {
                 self.reviewTimeResult = reviewTime

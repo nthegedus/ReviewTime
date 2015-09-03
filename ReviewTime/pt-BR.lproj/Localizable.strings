@@ -1,0 +1,24 @@
+/* Average Days */
+"(reviewTimeResult!.iosAverageTime) days" = "(reviewTimeResult!.iosAverageTime) dias";
+
+/* Average Days */
+"(reviewTimeResult!.macAverageTime) days" = "(reviewTimeResult!.macAverageTime) dias";
+
+/* Description reviews iOS */
+"Based on (reviewTimeResult!.iosTotalTweets) reviews in the last 14 days" = "Baseado em (reviewTimeResult!.iosTotalTweets) reviews nos últimos 14 dias";
+
+/* Description reviews Mac */
+"Based on (reviewTimeResult!.macTotalTweets) reviews in the last 30 days" = "Baseado em (reviewTimeResult!.macTotalTweets) reviews nos últimos 30 dias";
+
+/* Loading Label */
+"Loading..." = "Carregando...";
+
+/* Message alert about */
+"This is not official Apple data. It is based only on anecdotal data gathered from people posting their latest review times on Twitter and App.net using the #macreviewtime or #iosreviewtime hash tags." = "Estes não são dados oficias da Apple. Os dados são baseados em postagens de pessoas que utilizam as hashtag #macreviewtime ou #iosreviewtime.";
+
+/* Title alert about */
+"Where does this data come from?" = "De onde vem esses dados?";
+
+/* Last update Label */
+"last updated: (reviewTimeResult!.lastUpdate)" = "última atualização: (reviewTimeResult!.lastUpdate)";
+
