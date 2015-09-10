@@ -5,7 +5,7 @@ Review Time is an open source app for iOS written in Swift that show the average
 ### Requirements
 
 - iOS 8.0+
-- Xcode 6.4
+- Xcode 7.0
 - Cocoapods 0.38.2
 
 
