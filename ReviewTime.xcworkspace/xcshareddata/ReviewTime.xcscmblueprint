@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C4CCC93FE9FF11724B412735C4E348AE8BE65097",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C4CCC93FE9FF11724B412735C4E348AE8BE65097" : 0,
+    "174BC1472F6F32B7E0CB5EB42F89C6576CAE9BBC" : 0,
+    "D67A063FA724C45B8F15EFD86D2AF31D7284C135" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BCDA2F1E-FF16-47BA-A373-395F1B009576",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C4CCC93FE9FF11724B412735C4E348AE8BE65097" : "ReviewTime",
+    "174BC1472F6F32B7E0CB5EB42F89C6576CAE9BBC" : "Timepix\/Projects\/Registradores-iOS\/registradores-ios",
+    "D67A063FA724C45B8F15EFD86D2AF31D7284C135" : "review-time"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ReviewTime",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ReviewTime.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/timepix\/registradores-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "174BC1472F6F32B7E0CB5EB42F89C6576CAE9BBC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nthegedus\/ReviewTime.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4CCC93FE9FF11724B412735C4E348AE8BE65097"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/nthegedus\/review-time.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D67A063FA724C45B8F15EFD86D2AF31D7284C135"
+    }
+  ]
+}

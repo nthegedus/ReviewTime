@@ -21,25 +21,25 @@ extension NSDate {
     // MARK: - Public Methods
     // MARK: Difference From Dates
     func yearsFrom(date:NSDate) -> Int{
-        return NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitYear, fromDate: date, toDate: self, options: nil).year
+        return NSCalendar.currentCalendar().components(NSCalendarUnit.Year, fromDate: date, toDate: self, options: []).year
     }
     func monthsFrom(date:NSDate) -> Int{
-        return NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitMonth, fromDate: date, toDate: self, options: nil).month
+        return NSCalendar.currentCalendar().components(NSCalendarUnit.Month, fromDate: date, toDate: self, options: []).month
     }
     func weeksFrom(date:NSDate) -> Int{
-        return NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitWeekOfYear, fromDate: date, toDate: self, options: nil).weekOfYear
+        return NSCalendar.currentCalendar().components(NSCalendarUnit.WeekOfYear, fromDate: date, toDate: self, options: []).weekOfYear
     }
     func daysFrom(date:NSDate) -> Int{
-        return NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitDay, fromDate: date, toDate: self, options: nil).day
+        return NSCalendar.currentCalendar().components(NSCalendarUnit.Day, fromDate: date, toDate: self, options: []).day
     }
     func hoursFrom(date:NSDate) -> Int{
-        return NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitHour, fromDate: date, toDate: self, options: nil).hour
+        return NSCalendar.currentCalendar().components(NSCalendarUnit.Hour, fromDate: date, toDate: self, options: []).hour
     }
     func minutesFrom(date:NSDate) -> Int{
-        return NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitMinute, fromDate: date, toDate: self, options: nil).minute
+        return NSCalendar.currentCalendar().components(NSCalendarUnit.Minute, fromDate: date, toDate: self, options: []).minute
     }
     func secondsFrom(date:NSDate) -> Int{
-        return NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitSecond, fromDate: date, toDate: self, options: nil).second
+        return NSCalendar.currentCalendar().components(NSCalendarUnit.Second, fromDate: date, toDate: self, options: []).second
     }
     func offsetFrom(date:NSDate) -> (offSet: Int, newDateWithOffset: NSDate)? {
         let yearsOffset = yearsFrom(date)
@@ -83,25 +83,25 @@ extension NSDate {
     // MARK: - Public Static Methods
     // MARK: Changing Date
     class func sumYears(year: Int, toDate date: NSDate) -> NSDate {
-        return self.editDateByAddingUnit(.CalendarUnitYear, value: year, toDate: date)
+        return self.editDateByAddingUnit(.Year, value: year, toDate: date)
     }
     class func sumMonths(months: Int, toDate date: NSDate) -> NSDate {
-        return self.editDateByAddingUnit(.CalendarUnitMonth, value: months, toDate: date)
+        return self.editDateByAddingUnit(.Month, value: months, toDate: date)
     }
     class func sumWeeks(weeks: Int, toDate date: NSDate) -> NSDate {
-        return self.editDateByAddingUnit(.CalendarUnitWeekOfYear, value: weeks, toDate: date)
+        return self.editDateByAddingUnit(.WeekOfYear, value: weeks, toDate: date)
     }
     class func sumDays(days: Int, toDate date: NSDate) -> NSDate {
-        return self.editDateByAddingUnit(.CalendarUnitDay, value: days, toDate: date)
+        return self.editDateByAddingUnit(.Day, value: days, toDate: date)
     }
     class func sumHours(hours: Int, toDate date: NSDate) -> NSDate {
-        return self.editDateByAddingUnit(.CalendarUnitHour, value: hours, toDate: date)
+        return self.editDateByAddingUnit(.Hour, value: hours, toDate: date)
     }
     class func sumMinutes(minutes: Int, toDate date: NSDate) -> NSDate {
-        return self.editDateByAddingUnit(.CalendarUnitMinute, value: minutes, toDate: date)
+        return self.editDateByAddingUnit(.Minute, value: minutes, toDate: date)
     }
     class func sumSeconds(seconds: Int, toDate date: NSDate) -> NSDate {
-        return self.editDateByAddingUnit(.CalendarUnitSecond, value: seconds, toDate: date)
+        return self.editDateByAddingUnit(.Second, value: seconds, toDate: date)
     }
     
     // MARK: Localization
@@ -109,7 +109,7 @@ extension NSDate {
         return self.localeDateStringFromDate(date, withStyle: .ShortStyle)
     }
     class func localeDateStringFromDate(date: NSDate, withStyle style: NSDateFormatterStyle) -> String {
-        var dateFormatter = NSDateFormatter()
+        let dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = style
         dateFormatter.locale = NSLocale.currentLocale()
         return dateFormatter.stringFromDate(date)
@@ -118,11 +118,11 @@ extension NSDate {
     // MARK: - Private Static Methods
     private class func editDateByAddingUnit(unit: NSCalendarUnit, value: Int, toDate date: NSDate) -> NSDate {
         
-        var newDate = NSCalendar.currentCalendar().dateByAddingUnit(
+        let newDate = NSCalendar.currentCalendar().dateByAddingUnit(
             unit,
             value: value,
             toDate: date,
-            options: NSCalendarOptions(0))
+            options: NSCalendarOptions(rawValue: 0))
         
         return newDate!
 

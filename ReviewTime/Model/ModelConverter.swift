@@ -18,10 +18,10 @@ class ModelConverter: NSObject {
         
         var dataDict = data["results"]! as! Dictionary<String, Array<Dictionary<String, AnyObject>>>
         reviewTime.lastUpdate = (dataDict["data"]!.first!["lastUpdate"]! as! String)
-        reviewTime.iosAverageTime = (dataDict["data"]!.first!["iOsDays"]! as! String).toInt()
-        reviewTime.iosTotalTweets = (dataDict["data"]!.first!["iOsTotalReviews"]!["text"]! as! String).toInt()
-        reviewTime.macAverageTime = (dataDict["data"]!.first!["macDays"]! as! String).toInt()
-        reviewTime.macTotalTweets = (dataDict["data"]!.first!["macTotalReviews"]!["text"]! as! String).toInt()
+        reviewTime.iosAverageTime = Int(String(dataDict["data"]!.first!["iOsDays"]!))
+        reviewTime.iosTotalTweets = Int(String(dataDict["data"]!.first!["iOsTotalReviews"]!["text"]!))
+        reviewTime.macAverageTime = Int(String(dataDict["data"]!.first!["macDays"]!))
+        reviewTime.macTotalTweets = Int(String(dataDict["data"]!.first!["macTotalReviews"]!["text"]!))
         
         return reviewTime
         
@@ -37,7 +37,7 @@ class ModelConverter: NSObject {
         
         for tweet: Dictionary <String, AnyObject> in lastTweets {
             
-            var newTweet = Tweet()
+            let newTweet = Tweet()
             newTweet.username = tweet["username"] as! String
             newTweet.nickname = tweet["nickname"] as! String
             newTweet.message = tweet["message"] as! String

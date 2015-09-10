@@ -26,7 +26,7 @@ extension UINavigationItem {
     
     func customButtonNavigationbar(side: Side, title: String, style: UIBarButtonItemStyle, target: AnyObject?, action: Selector) -> UIBarButtonItem {
         
-        var buttonItem : UIBarButtonItem = UIBarButtonItem(title: title, style: style, target: target, action: action)
+        let buttonItem : UIBarButtonItem = UIBarButtonItem(title: title, style: style, target: target, action: action)
 
         self.setSide(side, buttonItem: buttonItem)
         
@@ -35,7 +35,7 @@ extension UINavigationItem {
     
     func customButtonNavigationbar(side: Side, image: UIImage, style: UIBarButtonItemStyle, target: AnyObject?, action: Selector) -> UIBarButtonItem{
         
-        var buttonItem : UIBarButtonItem = UIBarButtonItem(image: image, style: style, target: target, action: action)
+        let buttonItem : UIBarButtonItem = UIBarButtonItem(image: image, style: style, target: target, action: action)
         
         self.setSide(side, buttonItem: buttonItem)
         
@@ -44,7 +44,7 @@ extension UINavigationItem {
     
     func customButtonNavigationbar(side: Side, button: UIButton) {
         
-        var buttonItem : UIBarButtonItem = UIBarButtonItem(customView: button)
+        let buttonItem : UIBarButtonItem = UIBarButtonItem(customView: button)
         self.setSide(side, buttonItem: buttonItem)
         
     }

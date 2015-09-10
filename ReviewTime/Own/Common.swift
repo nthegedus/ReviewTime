@@ -27,7 +27,7 @@ class Common {
     
     // MARK: - Appearance
     class func configureAppearance() {
-        var colorImage = UIImage.imageWithColor(color: colorDarkGray)
+        let colorImage = UIImage.imageWithColor(color: colorDarkGray)
         UINavigationBar.appearance().setBackgroundImage(colorImage, forBarMetrics: UIBarMetrics.Default)
         UIApplication.sharedApplication().statusBarStyle = .LightContent
     }

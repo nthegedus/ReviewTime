@@ -80,10 +80,10 @@ class HomeViewController: UIViewController {
     
     private func logAnalytics() {
         
-        var tracker = GAI.sharedInstance().defaultTracker
+        let tracker = GAI.sharedInstance().defaultTracker
         tracker.set("HomeViewController", value: "Load_Home")
         
-        var builder = GAIDictionaryBuilder.createScreenView()
+        let builder = GAIDictionaryBuilder.createScreenView()
         tracker.send(builder.build() as [NSObject : AnyObject])
         
     }
@@ -135,7 +135,7 @@ class HomeViewController: UIViewController {
             
             composer.showFromViewController(self, completion: { (result) -> Void in
                 if (result == TWTRComposerResult.Done) {
-                    var tracker = GAI.sharedInstance().defaultTracker
+                    let tracker = GAI.sharedInstance().defaultTracker
                     tracker.set("Tweeted", value: "Tweeted_\(hashtag)")
 
                     log.debug("Tweeted")
@@ -164,7 +164,7 @@ class HomeViewController: UIViewController {
 
     @IBAction func tweetIOS() {
         
-        var tracker = GAI.sharedInstance().defaultTracker
+        let tracker = GAI.sharedInstance().defaultTracker
         tracker.set("Start Twitter for iOS hashtag", value: "Tweet_iOS")
         
         self.tweetReviewTimeWithHashtag("#iosreviewtime")
@@ -173,7 +173,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func tweetMac( ) {
         
-        var tracker = GAI.sharedInstance().defaultTracker
+        let tracker = GAI.sharedInstance().defaultTracker
         tracker.set("Start Twitter for Mac hashtag", value: "Tweet_Mac")
         
         self.tweetReviewTimeWithHashtag("#macreviewtime")

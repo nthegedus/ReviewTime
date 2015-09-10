@@ -10,15 +10,15 @@ import UIKit
 extension UINavigationController {
     
     
-    func pushViewControllerWithFade(#viewController: UIViewController) {
+    func pushViewControllerWithFade(viewController viewController: UIViewController) {
     
-        var transition: CATransition = CATransition()
+        let transition: CATransition = CATransition()
         transition.duration = 0.3
         transition.type = kCATransitionFade
         
         self.view.layer.addAnimation(transition, forKey: nil)
         
-        if self.navigationController?.viewControllers.last as? UIViewController != viewController {
+        if self.navigationController?.viewControllers.last != viewController {
 
             self.pushViewController(viewController, animated: false)
 
@@ -28,7 +28,7 @@ extension UINavigationController {
     
     func popViewControllerAnimatedWithFade() {
         
-        var transition: CATransition = CATransition()
+        let transition: CATransition = CATransition()
         transition.duration = 0.3
         transition.type = kCATransitionFade
         
@@ -39,7 +39,7 @@ extension UINavigationController {
     
     func popToRootViewControllerAnimatedWithFade() {
         
-        var transition: CATransition = CATransition()
+        let transition: CATransition = CATransition()
         transition.duration = 0.3
         transition.type = kCATransitionFade
         
@@ -48,9 +48,9 @@ extension UINavigationController {
         
     }
     
-    func popToViewControllerWithFade(#viewController: UIViewController) {
+    func popToViewControllerWithFade(viewController viewController: UIViewController) {
         
-        var transition: CATransition = CATransition()
+        let transition: CATransition = CATransition()
         transition.duration = 0.5
         transition.type = kCATransitionFade
         

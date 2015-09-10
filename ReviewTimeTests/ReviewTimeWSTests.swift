@@ -14,7 +14,7 @@ class ReviewTimeWSTests: XCTestCase {
 
     func testShouldBeAbleToFetchDataAndConvertCorrectly() {
         let stub: OHHTTPStubsDescriptor = OHHTTPStubs.stubRequestsPassingTest({ (request) -> Bool in
-            let containsReviewTimeURL = request.URL?.absoluteString?.hasSuffix("reviewTime.json")
+            let containsReviewTimeURL = request.URL?.absoluteString.hasSuffix("reviewTime.json")
             XCTAssertTrue(containsReviewTimeURL!, "doens't have URL")
             XCTAssertEqual("GET", request.HTTPMethod!, "Methods aren't equals")
             XCTAssertNil(request.HTTPBody, "body's nil")
@@ -30,7 +30,7 @@ class ReviewTimeWSTests: XCTestCase {
         }
         
         expectation.fulfill()
-        self.waitForExpectationsWithTimeout(request.task.originalRequest.timeoutInterval, handler: { (error) -> Void in
+        self.waitForExpectationsWithTimeout(request.task.originalRequest!.timeoutInterval, handler: { (error) -> Void in
             OHHTTPStubs.removeStub(stub)
         })
 
