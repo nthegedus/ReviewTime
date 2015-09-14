@@ -8,23 +8,12 @@
 
 import UIKit
 
-enum Hashtag: String {
-    
-    case ios = "iOS"
-    case mac = "Mac"
-    
-    func hashtagName() -> String {
-        switch self {
-        case .ios:
-            return "iosreviewtime"
-        case .mac:
-            return "macreviewtime"
-        }
-    }
-    
-}
-
 class ReviewTime: NSObject {
+    
+    struct Hashtag {
+        static let ios = "#iosreviewtime"
+        static let mac = "#macreviewtime"
+    }
     
     var version: NSNumber!
     var lastUpdate: String!

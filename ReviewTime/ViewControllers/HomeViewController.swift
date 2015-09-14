@@ -57,7 +57,6 @@ class HomeViewController: UIViewController {
         super.awakeFromNib()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "tweetMac", name: "Mac", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "tweetIOS", name: "iOS", object: nil)
-
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -115,36 +114,33 @@ class HomeViewController: UIViewController {
         })
     }
     
-    private func tweetReviewTimeWithHashtag(hashtag: String) {
+    private func validateTwitterLogin(completion: ((NSError?) -> Void)?) {
         
         if Twitter.sharedInstance().session() == nil {
             
             Twitter.sharedInstance().logInWithCompletion {
                 (session, error) -> Void in
-                if (session != nil) {
-                    self.tweetReviewTimeWithHashtag(hashtag)
-                }
-                
+                completion!(error)
             }
-            
         }else{
-            
-            let composer = TWTRComposer()
-            
-            composer.setText(hashtag)
-            
-            composer.showFromViewController(self, completion: { (result) -> Void in
-                if (result == TWTRComposerResult.Done) {
-                    let tracker = GAI.sharedInstance().defaultTracker
-                    tracker.set("Tweeted", value: "Tweeted_\(hashtag)")
-
-                    log.debug("Tweeted")
-                }
-            })
-             
+            completion!(nil)
         }
-
         
+    }
+    
+    private func tweetReviewTimeWithHashtag(hashtag: String) {
+        
+        let composer = TWTRComposer()
+        composer.setText(hashtag)
+        composer.showFromViewController(self, completion: { (result) -> Void in
+            if (result == TWTRComposerResult.Done) {
+                let tracker = GAI.sharedInstance().defaultTracker
+                tracker.set("Tweeted", value: "Tweeted_\(hashtag)")
+                
+                log.debug("Tweeted")
+            }
+        })
+
     }
     
     // MARK: - IBActions
@@ -154,7 +150,7 @@ class HomeViewController: UIViewController {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
             self.errorButton.alpha = 0.0
             
-        }) { (bool) -> Void in
+        }) { (finished) -> Void in
             
             self.fetchData()
         }
@@ -167,7 +163,11 @@ class HomeViewController: UIViewController {
         let tracker = GAI.sharedInstance().defaultTracker
         tracker.set("Start Twitter for iOS hashtag", value: "Tweet_iOS")
         
-        self.tweetReviewTimeWithHashtag("#iosreviewtime")
+        self.validateTwitterLogin { (error) -> Void in
+            if error == nil {
+                self.tweetReviewTimeWithHashtag(ReviewTime.Hashtag.ios)
+            }
+        }
         
     }
     
@@ -176,7 +176,11 @@ class HomeViewController: UIViewController {
         let tracker = GAI.sharedInstance().defaultTracker
         tracker.set("Start Twitter for Mac hashtag", value: "Tweet_Mac")
         
-        self.tweetReviewTimeWithHashtag("#macreviewtime")
+        self.validateTwitterLogin { (error) -> Void in
+            if error == nil {
+                self.tweetReviewTimeWithHashtag(ReviewTime.Hashtag.mac)
+            }
+        }
         
     }
     
@@ -185,12 +189,11 @@ class HomeViewController: UIViewController {
         let title = NSLocalizedString("Where does this data come from?", comment: "Title alert about")
         let message = NSLocalizedString("This is not official Apple data. It is based only on anecdotal data gathered from people posting their latest review times on Twitter and App.net using the #macreviewtime or #iosreviewtime hash tags.", comment: "Message alert about")
         
-        UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "Ok").show()
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "ok", style: .Default, handler: nil)
+        alert.addAction(action)
+        self.presentViewController(alert, animated: true, completion: nil)
         
     }
-    
-    
-
-    
 
 }
