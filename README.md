@@ -1,5 +1,8 @@
 ![ReviewTime](https://github.com/nthegedus/ReviewTime/blob/master/Design/ReviewTime.png)
 # ReviewTime
+
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=56575d7528898101003ae8ae&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/56575d7528898101003ae8ae/build/latest)
+
 Review Time is an open source app for iOS written in Swift that show the average review times for iOS and the Mac Apps using data crowdsourced from AppReviewTime (http://appreviewtimes.com/).
 
 ### Requirements
