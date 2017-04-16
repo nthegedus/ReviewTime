@@ -35,7 +35,7 @@ It's a data crowdsourced from AppReviewTime (http://appreviewtimes.com/).
 YES :) Charlie Cook, from Shiny, allowed me to getting his data and so, I'm here now providing an App to you check the average review time from your iPhone.
 
 
-##MIT License
+## MIT License
 
 	Copyright (c) 2015 Nathan Hegedus
 
