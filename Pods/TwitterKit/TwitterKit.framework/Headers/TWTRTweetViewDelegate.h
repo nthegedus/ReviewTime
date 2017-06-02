@@ -6,8 +6,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class TWTRSession;
 @class TWTRTweetView;
 @class TWTRTweet;
+@protocol TWTRSessionStore;
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef void (^TWTRAuthenticationCompletionHandler)(id<TWTRSessionStore> sessionStore, NSString *userID);
 
 /**
  Delegate for `TWTRTweetView` to receive updates on the user interacting with this particular Tweet view.
@@ -28,6 +34,15 @@
  *  @param tweet     The Tweet model object being shown.
  */
 - (void)tweetView:(TWTRTweetView *)tweetView didSelectTweet:(TWTRTweet *)tweet;
+
+/**
+ *  The tweet view image was tapped.
+ *
+ *  @param tweetView The Tweet view that was tapped.
+ *  @param image     The exact UIImage data shown by the Tweet view.
+ *  @param imageURL  The full URL of the image being shown.
+ */
+- (void)tweetView:(TWTRTweetView *)tweetView didTapImage:(UIImage *)image withURL:(NSURL *)imageURL;
 
 /**
  *  A URL in the text of a tweet was tapped. Implement to show your own webview rather than opening Safari.
@@ -80,5 +95,15 @@
  */
 - (void)tweetView:(TWTRTweetView *)tweetView didUnfavoriteTweet:(TWTRTweet *)tweet;
 
+/**
+ *  Requests authentication from the delegate to use for a network request that requires user context.
+ *
+ *  @param tweetView                        The Tweet view showing this Tweet object.
+ *  @param authenticationCompletionHandler  The completion block that your delegate method must call to provide the necessary
+ *                                          user context e.g. user session.
+ */
+- (void)tweetView:(TWTRTweetView *)tweetView willRequireAuthenticationCompletionHandler:(TWTRAuthenticationCompletionHandler)authenticationCompletionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

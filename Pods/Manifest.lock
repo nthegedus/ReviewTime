@@ -1,25 +1,25 @@
 PODS:
-  - Alamofire (2.0.0)
-  - Crashlytics (3.3.0)
-  - Fabric (1.5.0):
-    - Fabric/Base (= 1.5.0)
-  - Fabric/Base (1.5.0)
-  - OCMock (3.1.5)
-  - OHHTTPStubs (4.2.0):
-    - OHHTTPStubs/Default (= 4.2.0)
-  - OHHTTPStubs/Core (4.2.0)
-  - OHHTTPStubs/Default (4.2.0):
+  - Alamofire (3.1.1)
+  - Crashlytics (3.3.4)
+  - Fabric (1.5.5):
+    - Fabric/Base (= 1.5.5)
+  - Fabric/Base (1.5.5)
+  - OCMock (3.2)
+  - OHHTTPStubs (4.5.0):
+    - OHHTTPStubs/Default (= 4.5.0)
+  - OHHTTPStubs/Core (4.5.0)
+  - OHHTTPStubs/Default (4.5.0):
     - OHHTTPStubs/Core
     - OHHTTPStubs/JSON
     - OHHTTPStubs/NSURLSession
     - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (4.2.0):
+  - OHHTTPStubs/JSON (4.5.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (4.2.0):
+  - OHHTTPStubs/NSURLSession (4.5.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (4.2.0)
-  - TwitterCore (1.9.0)
-  - TwitterKit (1.9.0)
+  - OHHTTPStubs/OHPathHelpers (4.5.0)
+  - TwitterCore (1.12.0)
+  - TwitterKit (1.12.0)
   - XCGLogger (3.0)
 
 DEPENDENCIES:
@@ -33,13 +33,13 @@ DEPENDENCIES:
   - XCGLogger
 
 SPEC CHECKSUMS:
-  Alamofire: 2f13548b29d25a58ecd91c9225fb51493e2b782b
-  Crashlytics: 6524671d48a4c3f4100b8c56ee8dd7e34aac820a
-  Fabric: 374a4a0bbefa219ed201cbc84f2f42e4029302a6
-  OCMock: 4c2925291f80407c3738dd1db14d21d0cc278864
-  OHHTTPStubs: f639130b83fb5f4f022d38f841141b0a6fa77249
-  TwitterCore: 98ed97a6047c4ef109522840337e815683ead7e5
-  TwitterKit: 1492792649dee11c2087498f7993f529bdb6c870
+  Alamofire: 9b0a7188b961a03914a99304488bd226b0e46c0e
+  Crashlytics: 41c082440d2e14da444186fff65e79c0b4b35d4c
+  Fabric: 190bf1a6eb65f7500de1347d027d2e59a7e53db1
+  OCMock: 28def049ef47f996b515a8eeea958be7ccab2dbb
+  OHHTTPStubs: e573e76dd8bcd7ee5fcc6c3d86251551f4261e0c
+  TwitterCore: a1feadb793512962003ed2bad23e846c8daa4efd
+  TwitterKit: c27e7b997cd82d5c626fcfd8b1dead1e15dac7ca
   XCGLogger: 5802533aff8bafc8b3b9776ab8972576f31d0a4e
 
-COCOAPODS: 0.39.0.beta.4
+COCOAPODS: 0.39.0

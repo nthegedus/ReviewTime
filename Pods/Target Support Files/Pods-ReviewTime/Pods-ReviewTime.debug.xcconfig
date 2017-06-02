@@ -1,4 +1,5 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/Crashlytics" "$(PODS_ROOT)/Fabric" "$(PODS_ROOT)/TwitterCore" "$(PODS_ROOT)/TwitterKit"
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Crashlytics" "${PODS_ROOT}/Fabric" "${PODS_ROOT}/TwitterCore" "${PODS_ROOT}/TwitterKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Crashlytics" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/TwitterCore" "${PODS_ROOT}/Headers/Public/TwitterKit"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'

@@ -10,7 +10,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BCDA2F1E-FF16-47BA-A373-395F1B009576",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "C4CCC93FE9FF11724B412735C4E348AE8BE65097" : "ReviewTime",
+    "C4CCC93FE9FF11724B412735C4E348AE8BE65097" : "ReviewTime\/",
     "174BC1472F6F32B7E0CB5EB42F89C6576CAE9BBC" : "Timepix\/Projects\/Registradores-iOS\/registradores-ios",
     "D67A063FA724C45B8F15EFD86D2AF31D7284C135" : "review-time"
   },

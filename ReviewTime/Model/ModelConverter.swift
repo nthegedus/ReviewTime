@@ -19,9 +19,13 @@ class ModelConverter: NSObject {
         var dataDict = data["results"]! as! Dictionary<String, Array<Dictionary<String, AnyObject>>>
         reviewTime.lastUpdate = (dataDict["data"]!.first!["lastUpdate"]! as! String)
         reviewTime.iosAverageTime = Int(String(dataDict["data"]!.first!["iOsDays"]!))
-        reviewTime.iosTotalTweets = Int(String(dataDict["data"]!.first!["iOsTotalReviews"]!["text"]!))
+        if let iosTotalReviews = dataDict["data"]!.first!["iOsTotalReviews"]!["text"] {
+            reviewTime.iosTotalTweets = Int(String(iosTotalReviews))
+        }
         reviewTime.macAverageTime = Int(String(dataDict["data"]!.first!["macDays"]!))
-        reviewTime.macTotalTweets = Int(String(dataDict["data"]!.first!["macTotalReviews"]!["text"]!))
+        if let macTotalReviews = dataDict["data"]!.first!["macTotalReviews"]!["text"] {
+            reviewTime.macTotalTweets = Int(String(macTotalReviews))
+        }
         
         return reviewTime
         

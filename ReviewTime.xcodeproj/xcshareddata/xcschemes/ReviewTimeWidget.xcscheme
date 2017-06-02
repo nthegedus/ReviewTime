@@ -43,13 +43,23 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "984261A61BE3D4FD008FAF2C"
+               BuildableName = "ReviewTimeUITests.xctest"
+               BlueprintName = "ReviewTimeUITests"
+               ReferencedContainer = "container:ReviewTime.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "98476BFA1B276961002208EA"
-            BuildableName = "ReviewTimeWidget.appex"
-            BlueprintName = "ReviewTimeWidget"
+            BlueprintIdentifier = "98F5F92B1B1379C400371AAE"
+            BuildableName = "ReviewTime.app"
+            BlueprintName = "ReviewTime"
             ReferencedContainer = "container:ReviewTime.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

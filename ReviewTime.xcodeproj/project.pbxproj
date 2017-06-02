@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4FBF33385EF26B67EDB1BCF7 /* Pods_ReviewTimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13210876656292B18BB50CBB /* Pods_ReviewTimeTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		4FBF33385EF26B67EDB1BCF7 /* Pods_ReviewTimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13210876656292B18BB50CBB /* Pods_ReviewTimeTests.framework */; };
 		980192571B331485009039A3 /* london_README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 980192531B331485009039A3 /* london_README.txt */; };
 		980192581B331485009039A3 /* london_README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 980192531B331485009039A3 /* london_README.txt */; };
 		980192591B331485009039A3 /* london_README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 980192531B331485009039A3 /* london_README.txt */; };
@@ -27,12 +27,14 @@
 		981C04141B1E44A70042456A /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981C04131B1E44A70042456A /* TweetCell.swift */; };
 		98305F881B3343200055685B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98305F871B3343200055685B /* HomeViewController.swift */; };
 		98305F951B33610F0055685B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98305F941B33610F0055685B /* Images.xcassets */; };
+		984261AA1BE3D4FD008FAF2C /* ReviewTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984261A91BE3D4FD008FAF2C /* ReviewTimeUITests.swift */; };
 		98476BFD1B276961002208EA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98476BFC1B276961002208EA /* NotificationCenter.framework */; };
 		98476C021B276961002208EA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98476C011B276961002208EA /* TodayViewController.swift */; };
 		98476C041B276961002208EA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98476C031B276961002208EA /* MainInterface.storyboard */; };
 		98476C071B276961002208EA /* ReviewTimeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 98476BFB1B276961002208EA /* ReviewTimeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9854F2F61B9491B900230BF2 /* ReviewTimeWSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9854F2F51B9491B900230BF2 /* ReviewTimeWSTests.swift */; };
 		9854F2F81B94935200230BF2 /* reviewTime.json in Resources */ = {isa = PBXBuildFile; fileRef = 9854F2F71B94935200230BF2 /* reviewTime.json */; };
+		9860D2D71BE8E74E000FFC54 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9860D2D61BE8E74E000FFC54 /* SnapshotHelper.swift */; };
 		9898F5E01B56CB52008F3230 /* NHImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898F5DF1B56CB52008F3230 /* NHImageView.swift */; };
 		9898F5E11B56CB52008F3230 /* NHImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898F5DF1B56CB52008F3230 /* NHImageView.swift */; };
 		9898F5E51B56CB80008F3230 /* NHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9898F5E41B56CB80008F3230 /* NHButton.swift */; };
@@ -76,11 +78,18 @@
 		98F5F96F1B137B1300371AAE /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F5F9681B137B1300371AAE /* UINavigationControllerExtension.swift */; };
 		98F5F9701B137B1300371AAE /* UINavigationItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F5F96A1B137B1300371AAE /* UINavigationItemExtension.swift */; };
 		98F5F9741B1384AA00371AAE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F5F9731B1384AA00371AAE /* QuartzCore.framework */; };
-		E8C60D99E84F9846199D8EC5 /* Pods_ReviewTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF865F82E76EDB89B54CDBB /* Pods_ReviewTime.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		E926D262E09E24EDADF3F4C0 /* Pods_ReviewTimeWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7057BF9FA7ED28E9C541E3 /* Pods_ReviewTimeWidget.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E8C60D99E84F9846199D8EC5 /* Pods_ReviewTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF865F82E76EDB89B54CDBB /* Pods_ReviewTime.framework */; };
+		E926D262E09E24EDADF3F4C0 /* Pods_ReviewTimeWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7057BF9FA7ED28E9C541E3 /* Pods_ReviewTimeWidget.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		984261AC1BE3D4FD008FAF2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F5F9241B1379C400371AAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98F5F92B1B1379C400371AAE;
+			remoteInfo = ReviewTime;
+		};
 		98476C051B276961002208EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 98F5F9241B1379C400371AAE /* Project object */;
@@ -133,6 +142,9 @@
 		981C04131B1E44A70042456A /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		98305F871B3343200055685B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		98305F941B33610F0055685B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		984261A71BE3D4FD008FAF2C /* ReviewTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReviewTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		984261A91BE3D4FD008FAF2C /* ReviewTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTimeUITests.swift; sourceTree = "<group>"; };
+		984261AB1BE3D4FD008FAF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98476BFB1B276961002208EA /* ReviewTimeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReviewTimeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		98476BFC1B276961002208EA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		98476C001B276961002208EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +153,7 @@
 		9854F2F41B94911100230BF2 /* ReviewTimeTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReviewTimeTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		9854F2F51B9491B900230BF2 /* ReviewTimeWSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewTimeWSTests.swift; sourceTree = "<group>"; };
 		9854F2F71B94935200230BF2 /* reviewTime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reviewTime.json; sourceTree = "<group>"; };
+		9860D2D61BE8E74E000FFC54 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		9898F5DF1B56CB52008F3230 /* NHImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NHImageView.swift; sourceTree = "<group>"; };
 		9898F5E41B56CB80008F3230 /* NHButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NHButton.swift; sourceTree = "<group>"; };
 		989A77401B98D04000851AFC /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -197,6 +210,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		984261A41BE3D4FD008FAF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98476BF81B276961002208EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +286,16 @@
 				981C04131B1E44A70042456A /* TweetCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		984261A81BE3D4FD008FAF2C /* ReviewTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9860D2D61BE8E74E000FFC54 /* SnapshotHelper.swift */,
+				984261A91BE3D4FD008FAF2C /* ReviewTimeUITests.swift */,
+				984261AB1BE3D4FD008FAF2C /* Info.plist */,
+			);
+			path = ReviewTimeUITests;
 			sourceTree = "<group>";
 		};
 		98476BFE1B276961002208EA /* ReviewTimeWidget */ = {
@@ -354,6 +384,7 @@
 				98F5F92E1B1379C400371AAE /* ReviewTime */,
 				98F5F9441B1379C400371AAE /* ReviewTimeTests */,
 				98476BFE1B276961002208EA /* ReviewTimeWidget */,
+				984261A81BE3D4FD008FAF2C /* ReviewTimeUITests */,
 				98F5F92D1B1379C400371AAE /* Products */,
 				FE9CCB74AFDEB49E2C1BD20A /* Frameworks */,
 				D0449F269F8F1CD311D2F65C /* Pods */,
@@ -366,6 +397,7 @@
 				98F5F92C1B1379C400371AAE /* ReviewTime.app */,
 				98F5F9411B1379C400371AAE /* ReviewTimeTests.xctest */,
 				98476BFB1B276961002208EA /* ReviewTimeWidget.appex */,
+				984261A71BE3D4FD008FAF2C /* ReviewTimeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -546,6 +578,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		984261A61BE3D4FD008FAF2C /* ReviewTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984261B01BE3D4FD008FAF2C /* Build configuration list for PBXNativeTarget "ReviewTimeUITests" */;
+			buildPhases = (
+				984261A31BE3D4FD008FAF2C /* Sources */,
+				984261A41BE3D4FD008FAF2C /* Frameworks */,
+				984261A51BE3D4FD008FAF2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				984261AD1BE3D4FD008FAF2C /* PBXTargetDependency */,
+			);
+			name = ReviewTimeUITests;
+			productName = ReviewTimeUITests;
+			productReference = 984261A71BE3D4FD008FAF2C /* ReviewTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		98476BFA1B276961002208EA /* ReviewTimeWidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98476C0A1B276961002208EA /* Build configuration list for PBXNativeTarget "ReviewTimeWidget" */;
@@ -555,6 +605,7 @@
 				98476BF81B276961002208EA /* Frameworks */,
 				98476BF91B276961002208EA /* Resources */,
 				5B1FFFBA650B649EC3B47D21 /* Copy Pods Resources */,
+				2E14E7BE9FF2CDA094BF6029 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -620,6 +671,10 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Nathan Hegedus";
 				TargetAttributes = {
+					984261A61BE3D4FD008FAF2C = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 98F5F92B1B1379C400371AAE;
+					};
 					98476BFA1B276961002208EA = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = TMLU95SCZR;
@@ -658,13 +713,21 @@
 			projectRoot = "";
 			targets = (
 				98F5F92B1B1379C400371AAE /* ReviewTime */,
-				98F5F9401B1379C400371AAE /* ReviewTimeTests */,
 				98476BFA1B276961002208EA /* ReviewTimeWidget */,
+				98F5F9401B1379C400371AAE /* ReviewTimeTests */,
+				984261A61BE3D4FD008FAF2C /* ReviewTimeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		984261A51BE3D4FD008FAF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98476BF91B276961002208EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -726,6 +789,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReviewTimeTests/Pods-ReviewTimeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E14E7BE9FF2CDA094BF6029 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReviewTimeWidget/Pods-ReviewTimeWidget-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5B1FFFBA650B649EC3B47D21 /* Copy Pods Resources */ = {
@@ -849,6 +927,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		984261A31BE3D4FD008FAF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984261AA1BE3D4FD008FAF2C /* ReviewTimeUITests.swift in Sources */,
+				9860D2D71BE8E74E000FFC54 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98476BF71B276961002208EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -909,6 +996,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		984261AD1BE3D4FD008FAF2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98F5F92B1B1379C400371AAE /* ReviewTime */;
+			targetProxy = 984261AC1BE3D4FD008FAF2C /* PBXContainerItemProxy */;
+		};
 		98476C061B276961002208EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 98476BFA1B276961002208EA /* ReviewTimeWidget */;
@@ -989,6 +1081,33 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		984261AE1BE3D4FD008FAF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = ReviewTimeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nathanhegedus.ReviewTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReviewTime;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		984261AF1BE3D4FD008FAF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ReviewTimeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nathanhegedus.ReviewTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ReviewTime;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		98476C081B276961002208EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37C1BB82AA04C13E1EE454F1 /* Pods-ReviewTimeWidget.debug.xcconfig */;
@@ -1222,6 +1341,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		984261B01BE3D4FD008FAF2C /* Build configuration list for PBXNativeTarget "ReviewTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984261AE1BE3D4FD008FAF2C /* Debug */,
+				984261AF1BE3D4FD008FAF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		98476C0A1B276961002208EA /* Build configuration list for PBXNativeTarget "ReviewTimeWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -39,7 +39,7 @@
 
    @return A fully initialized `TWTRTimelineViewController` or nil if the data source is missing.
  */
-- (instancetype)initWithDataSource:(id<TWTRTimelineDataSource>)dataSource NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithDataSource:(id<TWTRTimelineDataSource>)dataSource;
 
 /**
   The source of `TWTRTweet` objects for this `TWTRTimelineViewController`.

@@ -13,23 +13,13 @@ class ReviewTimeWS: NSObject {
 
     class func fetchReviewTimeData(completion: ((ReviewTime?, NSError?) -> Void)?) -> Request {
 
-        return request(.GET, "\(URLManagerWS.createURL(.ShortData))").responseJSON(options: NSJSONReadingOptions.AllowFragments) { (request, response, result) -> Void in
-            
+        return request(.GET, URLManagerWS.createURL(.ShortData), parameters: nil).responseJSON { response in
             var reviewTime: ReviewTime?
-            if result.error == nil {
-                reviewTime = ModelConverter.parseData(result.value as! Dictionary<String, AnyObject>)
+            if let JSON = response.result.value {
+                reviewTime = ModelConverter.parseData(JSON as! Dictionary<String, AnyObject>)
             }
             completion?(reviewTime, nil)
-
         }
-        
-//        return request(.GET, "\(URLManagerWS.createURL(.ShortData))", parameters: nil).responseJSON(options: NSJSONReadingOptions.AllowFragments) { (request, response, data, responseError) -> Void in
-//            var reviewTime: ReviewTime?
-//            if responseError == nil {
-//                reviewTime = ModelConverter.parseData(data as! Dictionary<String, AnyObject>)
-//            }
-//            completion?(reviewTime, responseError)
-//        }
 
     }
     
