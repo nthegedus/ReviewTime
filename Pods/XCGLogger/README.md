@@ -1,9 +1,9 @@
-#XCGLogger
-#####By: Dave Wood
+# XCGLogger
+##### By: Dave Wood
 - Cerebral Gardens http://www.cerebralgardens.com/
 - Twitter: [@DaveWoodX](https://twitter.com/DaveWoodX)
 
-###tl;dr
+### tl;dr
 A debug log module for use in Swift projects. Allows you to log details to the console (and optionally a file), just like you would have with NSLog or println, but with additional information, such as the date, function name, filename and line number.
 
 Go from this:
@@ -14,7 +14,7 @@ to this:
 
 ```2014-06-09 06:44:43.600 [Debug] [AppDelegate.swift:40] application(_:didFinishLaunchingWithOptions:): Simple message```
 
-###Compatibility
+### Compatibility
 
 XCGLogger works in both iOS and OS X projects. It is a Swift library intended for use in Swift projects.
 
@@ -22,7 +22,7 @@ Swift does away with the C preprocessor, which kills the ability to use ```#defi
 
 Use XCGLogger version 3.x for Swift 2.0, XCGLogger version 2.x for Swift 1.2, and XCGLogger version 1.x for Swift 1.1 and below.
 
-###Communication _(Hat Tip AlamoFire)_
+### Communication _(Hat Tip AlamoFire)_
 
 * If you need help, use Stack Overflow. (Tag '[xcglogger](http://stackoverflow.com/questions/tagged/xcglogger)')
 * If you'd like to ask a general question, use [Stack Overflow](http://stackoverflow.com/questions/tagged/xcglogger).
@@ -30,7 +30,7 @@ Use XCGLogger version 3.x for Swift 2.0, XCGLogger version 2.x for Swift 1.2, an
 * If you have a feature request, open an issue.
 * If you want to contribute, submit a pull request.
 
-###How to Use
+### How to Use
 
 Add the XCGLogger project as a subproject to your project, and add either the iOS or OS X library as a dependancy of your target(s).
 Under the General tab of your target, add the XCGLogger.framework to the Embedded Binaries.
@@ -81,7 +81,7 @@ log.severe("A severe error occurred, we are likely about to crash now")
 
 The different methods set the log level of the message. XCGLogger will only print messages with a log level that is >= its current log level setting.
 
-###Advanced Use
+### Advanced Use
 
 It's possible to create multiple instances of XCGLogger with different options. For example, you only want to log a specific section of your app to a file, perhaps to diagnose a specific issue a user is seeing. In that case, create alternate instances like this:
 
@@ -95,7 +95,7 @@ You can create alternate log destinations (besides the two built in ones for the
 
 Each log destination can have its own log level. Setting the log level on the log object itself will pass that level to each destination. Then set the destinations that need to be different.
 
-#####Selectively Executing Code
+##### Selectively Executing Code
 
 As of version 1.9, all log methods operate on closures. Using the same syntactic sugar as Swift's ```assert()``` function, this approach ensures we don't waste resources building log messages that won't be printed anyway, while at the same time preserving a clean call site.
 
@@ -120,7 +120,7 @@ log.debug {
 
 In cases where you wish to selectively execute code without generating a log line, you can use the methods: ```verboseExec```, ```debugExec```, ```infoExec```, ```warningExec```, ```errorExec```, and ```severeExec```.
 
-#####Custom Date Formats
+##### Custom Date Formats
 
 As of version 2.0, you can create your own NSDateFormatter object and assign it to the logger.
 
@@ -131,11 +131,11 @@ dateFormatter.locale = NSLocale.currentLocale()
 log.dateFormatter = dateFormatter
 ```
 
-#####Enhancing log messages with colour
+##### Enhancing log messages with colour
 
 XCGLogger now supports the XcodeColors plug-in (https://github.com/robbiehanson/XcodeColors). Once installed, each log level will have its own colour. These colours can be customized as desired. See the sample projects for examples. If using multiple logger's, you could alternatively set each logger to its own colour.
 
-#####Initialization using Closure
+##### Initialization using Closure
 
 Alternatively you can use a closure to initialize your global variable, so that all initialization is done in one place
 ```Swift
@@ -152,30 +152,30 @@ let log: XCGLogger = {
 }()
 ```
 
-#####Alternate Configurations
+##### Alternate Configurations
 
 By using Swift build flags, different log levels can be used in debugging versus staging/production.
 Go to Build settings -> Swift Compiler - Custom Flags -> Other Swift Flags and add ```-DDEBUG``` to the Debug entry.
 
 ```Swift
-#if DEBUG
+# if DEBUG
     log.setup(.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
-#else
+# else
     log.setup(.Severe, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil)
-#endif
+# endif
 ```
 
 You can set any number of options up in a similar fashion. See the updated iOSDemo app for an example of using different log destinations based on options, search for ```USE_NSLOG```.
 
 
-###To Do
+### To Do
 
 - Add more examples of some advanced use cases
 - Add additional log destination types
 - Add Objective-C support
 - Add log file rotation options
 
-###More
+### More
 
 If you find this library helpful, you'll definitely find these other tools helpful:
 
@@ -185,7 +185,7 @@ Briefs: http://giveabrief.com/
 
 Also, please check out my book **Swift for the Really Impatient** http://swiftforthereallyimpatient.com/
 
-###Change Log
+### Change Log
 
 * **Version 3.0**: *(2015/09/09)* - Bug fix, and WatchOS 2 suppport (thanks @ymyzk)
 * **Version 2.4**: *(2015/09/09)* - Minor bug fix, likely the last release for Swift 1.x
